@@ -1,0 +1,270 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .gg-navbar{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+  }
+  
+  .container-fluid{
+    display: flexbox;
+    justify-content: space-between;
+  }
+
+  .navitems-left{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navitems-right{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .postdate{
+    text-align: center;
+  }
+
+  .posttitle{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .postcontent{
+    font-family: 'Ubuntu';
+    font-size: 1em;
+    padding: auto;
+    padding-left: 10px;
+    border: 1pt solid rgba(0, 0, 0, 0.493);
+    border-radius: 3px;
+  }
+
+  .btn-comment{
+    position: absolute;
+    right: 0px;
+  }
+
+
+
+  /* COLOR CHANGER BELOW */
+
+  .centerstage{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BASE */
+
+  /* post_form */
+  .textinputclass{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+  }
+
+  .container{
+    display: flexbox;
+  }
+
+  .post-form-container{
+    display: flex;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: auto;
+    border-radius: 8px;
+    align-content: center;
+  }
+
+  .post-form-inner{
+    margin: auto;
+    padding: 15px;
+  }
+
+  .newPost{
+    margin: auto;
+    padding: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .gg-navbar{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+  }
+  
+  .container-fluid{
+    display: flexbox;
+    justify-content: space-between;
+  }
+
+  .navitems-left{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navitems-right{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .postdate{
+    text-align: center;
+  }
+
+  .posttitle{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .postcontent{
+    font-family: 'Ubuntu';
+    font-size: 1em;
+    padding: auto;
+    padding-left: 10px;
+    border: 1pt solid rgba(0, 0, 0, 0.493);
+    border-radius: 3px;
+  }
+
+  .btn-comment{
+    position: absolute;
+    right: 0px;
+  }
+
+
+
+  /* COLOR CHANGER BELOW */
+
+  .centerstage{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BASE */
+
+  /* post_form */
+  .textinputclass{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+  }
+
+  .container{
+    display: flexbox;
+  }
+
+  .post-form-container{
+    display: flex;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: auto;
+    border-radius: 8px;
+    align-content: center;
+  }
+
+  .post-form-inner{
+    margin: auto;
+    padding: 15px;
+  }
+
+  .newPost{
+    margin: auto;
+    padding: 15px;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Navbar */
+  .gg-navbar{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+  }
+  
+  .container-fluid{
+    display: flexbox;
+    justify-content: space-between;
+  }
+
+  .navitems-left{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navitems-right{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .postdate{
+    text-align: center;
+  }
+
+  .posttitle{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .postcontent{
+    font-family: 'Ubuntu';
+    font-size: 1em;
+    padding: auto;
+    padding-left: 10px;
+    border: 1pt solid rgba(0, 0, 0, 0.493);
+    border-radius: 3px;
+  }
+
+  .btn-comment{
+    position: absolute;
+    right: 0px;
+  }
+
+
+
+  /* COLOR CHANGER BELOW */
+
+  .centerstage{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BASE */
+
+  /* post_form */
+  .textinputclass{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+  }
+
+  .container{
+    display: flexbox;
+  }
+
+  .post-form-container{
+    display: flex;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: auto;
+    border-radius: 8px;
+    align-content: center;
+  }
+
+  .post-form-inner{
+    margin: auto;
+    padding: 15px;
+  }
+
+  .newPost{
+    margin: auto;
+    padding: 15px;
+  }
+}
+
+
