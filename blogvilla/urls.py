@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include
 from django.contrib.auth import views
+from django.http import HttpResponseRedirect
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
     url(r'accounts/login/$', views.auth_login, name='login'),
-    url(r'^accounts/logout/$', views.auth_logout, kwargs={'next_page' : '/'}, name='logout',),
+    url(r'^accounts/logout/$', views.auth_logout, HttpResponseRedirect('/'), name='logout',),
 ]

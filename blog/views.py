@@ -18,9 +18,6 @@ class PostListView(ListView):
     def get_queryset(self):
         return Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
 
-    def postlist(self, request):
-        return render(request, 'blog/post_form.html')
-
     
 
 class PostDetailView(DetailView):
@@ -71,21 +68,21 @@ def add_comment_to_post(request, pk):
             comment = form.save(commit=False)
             comment.post= post
             comment.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect(request,'post_detail', pk=post.pk)
         
         else:
             form = CommentForm()
-        return render(request, 'blog/comment_form.html', {'form':form})
+            return render(request, 'blog/comment_form.html', {'form':form})
 
 @login_required
 def comment_approve(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
-    return redirect('post_detail', pk = comment.post.pk)
+    return redirect(request,'post_detail', pk = comment.post.pk)
 
 @login_required
 def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     post_pk = comment.post.pk
     comment.delete()
-    return redirect('post_detail', pk=post_pk)
+    return redirect(request,'post_detail', pk=post_pk)

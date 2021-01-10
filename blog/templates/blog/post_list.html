@@ -7,13 +7,13 @@
     {% for post in post_list %}
       <div class="post">
           <h1><a href="{% url 'post_detail' pk=post.pk %}"> {{ post.title }} </a></h1>
-          <h3><a href="{% url 'post_detail' pk=post.pk %}"> {{ post.text|truncatechars:100}} </a></h3>
           <div class="date">
               <p>Published on: {{post.published|date:"D M Y"}}</p>
           </div>
           <a href="{% url 'post_detail' pk=post.pk}">Comments: {{post.approve_comments.count}}</a>
       </div>
     {% endfor %}
+    <!-- Today push -->
 </div>
 
 
